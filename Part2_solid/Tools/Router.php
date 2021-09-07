@@ -1,6 +1,6 @@
 <?php
 
-class Redirect
+class Router
 {
     public function redirect($url)
     {

@@ -2,8 +2,10 @@
 
 class Token
 {
-    public function crateToken($max)
+    private int $max = 10;
+
+    public function crateToken()
     {
-        return random_bytes($max);
+        return random_bytes($this->max);
     }
 }
