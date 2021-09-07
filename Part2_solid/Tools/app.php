@@ -33,6 +33,22 @@ class redirect
     }
 }
 
+class Token
+{
+    public function crateToken($max)
+    {
+        return random_bytes($max);
+    }
+}
+
+class TheDate
+{
+    public function createDate(string $date, string $format)
+    {
+        return (new DateTime($date))->format($format);
+    }
+}
+
 class Tools
 {
     private $format = 'd/m/y';
@@ -43,13 +59,15 @@ class Tools
         $redirection->redirect($url);
     }
 
-    public function date($date)
+    public function date(TheDate $theDate, $date)
     {
-        return (new DateTime($date))->format($this->format);
+        return $theDate->createDate($date, $this->format);
     }
 
-    public function token()
+    public function token(Token $token)
     {
-        return random_bytes($this->max);
+        return $token->crateToken($this->max);
     }
 }
+
+
