@@ -1,0 +1,15 @@
+{
+    "name": "ericjaslet/parking",
+    "autoload": {
+        "psr-4": {
+            "Parking\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eric Jaslet",
+            "email": "eric.jaslet@lean.fr"
+        }
+    ],
+    "require": {}
+}
