@@ -3,7 +3,7 @@
 class Order
 {
     private Shipping $shipping;
-    protected $weight;
+    protected float $weight;
 
 
     public function __construct(Shipping $s, float $weight)
@@ -14,7 +14,7 @@ class Order
 
     public function cost():float
     {
-        return $this->getWeight();
+        return $this->getWeight() + $this->shipping->getCost($this);
     }
 
     /**
@@ -30,7 +30,7 @@ class Order
      *
      * @return  self
      */ 
-    public function setShipping($shipping)
+    public function setShipping(Shipping $shipping)
     {
         $this->shipping = $shipping;
 
@@ -50,7 +50,7 @@ class Order
      *
      * @return  self
      */ 
-    public function setWeight($weight)
+    public function setWeight(float $weight)
     {
         $this->weight = $weight;
 
