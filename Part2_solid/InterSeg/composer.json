@@ -1,0 +1,15 @@
+{
+    "name": "ericjaslet/inter-seg",
+    "autoload": {
+        "psr-4": {
+            "InterSeg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eric Jaslet",
+            "email": "eric.jaslet@lean.fr"
+        }
+    ],
+    "require": {}
+}
