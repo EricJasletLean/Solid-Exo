@@ -2,7 +2,7 @@
 
 class Lamp
 {
-    private $light;
+    private Light $light;
 
     public function __construct(Light $light)
     {
