@@ -2,9 +2,9 @@
 
 class ShippingBike extends Shipping
 {
-    private float $cost = 50.00;
+    private float $cost = 1.3;
     public function getCost(Order $order):float
     {
-        return $this->cost;
+        return $this->cost * $order->getweight();
     }
 }

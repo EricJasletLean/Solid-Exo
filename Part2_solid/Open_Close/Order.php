@@ -14,7 +14,7 @@ class Order
 
     public function cost():float
     {
-        return $this->getWeight() + $this->shipping->getCost($this);
+        return $this->shipping->getCost($this);
     }
 
     /**
