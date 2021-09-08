@@ -10,21 +10,35 @@ class Product implements Productable
         private float $price
     ) {}
 
+    /**
+     * @return float
+     */
     public function getPrice():float
     {
         return $this->price;
     }
 
+    /**
+     * @param float $price
+     * @return void
+     */
     public function setPrice(float $price):void
     {
         $this->price = $price;
     }
 
+    /**
+     * @return string
+     */
     public function getName():string
     {
         return $this->name;
     }
 
+    /**
+     * @param string $name
+     * @return self
+     */
     public function setName(string $name):self
     {
         $this->name = $name;
