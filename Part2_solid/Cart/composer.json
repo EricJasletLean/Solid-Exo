@@ -1,0 +1,9 @@
+{
+    "name": "ericjaslet/cart",
+    "autoload": {
+        "psr-4": {
+            "Cart\\": "src/"
+        }
+    },
+    "require": {}
+}
