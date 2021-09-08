@@ -39,9 +39,7 @@ $container->setStorage($sql, 'SQL');
 var_dump($container);
 var_dump($container->getStorage('SQL'));
 
-/*
 $alan->setInterest($container->getStorage('SQL'));
-
 
 $bigdata = new Interest('DATA');
 $container->setStorage($bigdata, 'DATA');
@@ -53,4 +51,4 @@ var_dump($container->getStorage('DATA')); // retourne un intéret dans le contai
 echo "\n";
 $alan->getInterests();
 echo "\n";
-*/
+

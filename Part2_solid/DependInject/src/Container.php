@@ -22,10 +22,10 @@ class Container
 
     public function getStorage(string $name)
     {
-        $str = "Interests :\n";
         foreach($this->storage as $key=>$interest) {
-            $str .= "$key => {$interest->getName()}\n";
+            if ($interest->getName() === $name) {
+                return $interest;
+            }
         }
-        echo $str;
     }
 }
