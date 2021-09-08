@@ -11,5 +11,7 @@
             "email": "eric.jaslet@lean.fr"
         }
     ],
-    "require": {}
+    "require": {
+        "psy/psysh": "^0.10.8"
+    }
 }
