@@ -16,10 +16,8 @@ $alan->setInterest($python);
 $php = new Interest('PHP');
 $alan->setInterest($php);
 
-$javascript = new Interest('Python');
+$javascript = new Interest('Javascript');
 $alan->setInterest($javascript);
-
-// var_dump($alan);
 
 echo "\n";
 $alan->getInterests();
