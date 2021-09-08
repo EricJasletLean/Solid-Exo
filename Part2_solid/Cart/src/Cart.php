@@ -18,7 +18,7 @@ class Cart
      */
     public function buy(Productable $p, int $q):self
     {
-        $this->storage->setValue($p->getName(), round( ($p->getPrice() * $q), 2) );
+        $this->storage->setValue($p->getName(), round( ($p->getPrice() * $q * $this->tva), 2) );
         return $this;
     }
 
