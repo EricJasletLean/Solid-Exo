@@ -32,11 +32,15 @@ class StorageArray implements Storable
      */
     public function total():float
     {
+        /*
         $total = 0.00;
         foreach($this->storage as $price) {
             $total += $price;
         }
         return round($total, 2);
+        */
+
+        return array_sum($this->storage);
     }
 
     /**

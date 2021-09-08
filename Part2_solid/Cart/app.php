@@ -2,8 +2,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Cart\Product;
 use Cart\StorageArray;
+use Cart\StorageSession;
+use Cart\Product;
 use Cart\Cart;
 
 // création des produits
@@ -15,7 +16,8 @@ $products = [
 ];
 
 
-$storageSession =  new StorageArray;
+// $storageSession =  new StorageArray;
+$storageSession =  new StorageSession;
 
 $cart = new Cart($storageSession);
 
