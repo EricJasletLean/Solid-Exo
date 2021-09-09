@@ -21,7 +21,7 @@ class ArrayFieldStore implements FieldStorable
         $this->storage = [];
         return $this;
     }
-    public function Delete(string $name):void
+    public function delete(string $name):void
     {
         if (in_array($name, $this->storage)){
             unset($this->storage[$name]);

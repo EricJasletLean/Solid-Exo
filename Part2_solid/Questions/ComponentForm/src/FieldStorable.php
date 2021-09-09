@@ -7,6 +7,6 @@ Interface FieldStorable
 {
     public function addField(Fieldable $field):void;
     public function reset():self;
-    public function Delete(string $name):void;
+    public function delete(string $name):void;
     public function getStorage();
 }

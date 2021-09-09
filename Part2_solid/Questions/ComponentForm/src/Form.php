@@ -15,8 +15,6 @@ class Form
         $this->storage = $storage;
     }
 
-    public function showStorage(){var_dump( $this->storage->getStorage() );}
-
     public function addField(Fieldable $field)
     {
         $this->storage->addField($field);
