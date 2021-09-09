@@ -1,11 +1,10 @@
 <?php
 
 namespace ComponentForm;
-use ComponentForm\Fieldable;
 
-class FieldPassword implements Fieldable
+class FieldSubmit implements Fieldable
 {
-    const TYPE = 'password';
+    const TYPE = 'submit';
     private array $attr = [];
 
     public function __construct(private string $name, array $attr)
@@ -15,7 +14,7 @@ class FieldPassword implements Fieldable
 
     public function renderHtml()
     {
-        return '<label for="' . $this->getName() . '">' . $this->getName() . ' : </label><input type="' . $this->getType() . '" name="' . $this->getName() . '" id="' . $this->getName() . '" ' . $this->getAttr() . '>';
+        return '<input type="' . $this->getType() . '" value="' . $this->getName() . '" id="' . $this->getName() . '" ' . $this->getAttr() . '>';
     }
 
     public function getName():string

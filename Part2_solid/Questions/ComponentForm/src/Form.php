@@ -24,9 +24,9 @@ class Form
     {
         $html = '<form action="'. $this->getAction() . '" method="'. $this->getMethod() . '"' . $this->getAttr() . '>';
         foreach ( $this->storage->getStorage() as $key => $field){
-            $html .= '<div><label for="' . $field->getName() . '">' . $field->getName() . ' : </label><input type="' . $field->getType() . '" name="' . $field->getName() . '" id="' . $field->getName() . '" ' . $field->getAttr() . '></div>';
+            $html .= '<div>' . $field->renderHtml() . '</div>';
         }
-        return $html .= '<div><input type="submit" value="Subscribe!"></div></form>';
+        return $html .= '</form>';
     }
 
     /**

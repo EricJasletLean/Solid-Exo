@@ -13,6 +13,11 @@ class FieldText implements Fieldable
         $this->setAttr($attr);
     }
 
+    public function renderHtml()
+    {
+        return '<label for="' . $this->getName() . '">' . $this->getName() . ' : </label><input type="' . $this->getType() . '" name="' . $this->getName() . '" id="' . $this->getName() . '" ' . $this->getAttr() . '>';
+    }
+
     public function getName():string
     {
         return $this->name;
