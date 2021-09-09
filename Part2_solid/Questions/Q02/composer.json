@@ -1,0 +1,9 @@
+{
+    "name": "ericjaslet/q02",
+    "autoload": {
+        "psr-4": {
+            "Q02\\": "src/"
+        }
+    },
+    "require": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "ericjaslet/component-form",
+    "autoload": {
+        "psr-4": {
+            "ComponentForm\\": "src/"
+        }
+    },
+    "require": {}
+}
