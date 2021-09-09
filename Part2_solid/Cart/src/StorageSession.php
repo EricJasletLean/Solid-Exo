@@ -6,7 +6,7 @@ class StorageSession implements Storable
 {
     public function __construct()
     {
-        if (!isset($_SESSION)){
+        if (!isset($_SESSION) && !isset($_SESSION['storage'])) {
             session_start();
             $_SESSION['storage']=[];
         }
@@ -17,7 +17,7 @@ class StorageSession implements Storable
             $_SESSION['storage'][$name] = $price;
             return;
         }
-        
+
         $_SESSION['storage'][$name] += $price;
     }
     public function reset():void
