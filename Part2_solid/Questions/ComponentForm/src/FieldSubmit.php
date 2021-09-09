@@ -12,7 +12,7 @@ class FieldSubmit implements Fieldable
         $this->setAttr($attr);
     }
 
-    public function renderHtml()
+    public function renderHtml():string
     {
         return '<input type="' . $this->getType() . '" value="' . $this->getName() . '" id="' . $this->getName() . '" ' . $this->getAttr() . '>';
     }
@@ -34,7 +34,7 @@ class FieldSubmit implements Fieldable
     {
         return self::TYPE;
     }
-    public function getAttr()
+    public function getAttr():string
     {
         $att = '';
         foreach ($this->attr as $key => $attribute) {

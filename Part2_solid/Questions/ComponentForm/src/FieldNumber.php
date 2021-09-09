@@ -12,8 +12,8 @@ class FieldNumber implements Fieldable
     {
         $this->setAttr($attr);
     }
-    
-    public function renderHtml()
+
+    public function renderHtml():string
     {
         return '<label for="' . $this->getName() . '">' . $this->getName() . ' : </label><input type="' . $this->getType() . '" name="' . $this->getName() . '" id="' . $this->getName() . '" ' . $this->getAttr() . '>';
     }
@@ -35,7 +35,7 @@ class FieldNumber implements Fieldable
     {
         return self::TYPE;
     }
-    public function getAttr()
+    public function getAttr():string
     {
         $att = '';
         foreach ($this->attr as $key => $attribute) {
