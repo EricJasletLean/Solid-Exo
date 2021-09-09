@@ -15,9 +15,10 @@ class StorageSession implements Storable
     {
         if (!array_key_exists($name, $_SESSION['storage'])){
             $_SESSION['storage'][$name] = $price;
-        }else{
-            $_SESSION['storage'][$name] += $price;
+            return;
         }
+        
+        $_SESSION['storage'][$name] += $price;
     }
     public function reset():void
     {
