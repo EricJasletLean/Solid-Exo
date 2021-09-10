@@ -22,7 +22,7 @@ class ArrayUserStorage implements Storable
     /**
      * @return void
      */
-    public function getStorage()
+    public function getStorage():array
     {
         return $this->store;
     }

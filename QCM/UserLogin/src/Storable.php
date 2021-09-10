@@ -5,5 +5,5 @@ namespace UserLogin;
 Interface Storable
 {
     public function addStorage():void;
-    public function getStorage();
+    public function getStorage():array;
 }
