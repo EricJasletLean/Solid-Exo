@@ -8,8 +8,8 @@ use UserLogin\User;
 
 $store = [
     [
-        'name'  => 'Luke',
-        'age'   => 13
+        'name'  => 'Bébé',
+        'age'   => 1
     ],
     [
         'name'  => 'Eric',
@@ -29,5 +29,11 @@ $user = new User();
 $repositoryUser = new RepositoryUser($storage, $user);
 
 $user = $repositoryUser->findOne('Eric');
-
 echo $user;
+echo "\n";
+$user = $repositoryUser->findOne('Bébé');
+echo $user;
+echo "\n";
+$user = $repositoryUser->findOne('Anne-sophie');
+echo $user;
+echo "\n";
