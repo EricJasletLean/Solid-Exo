@@ -8,12 +8,12 @@ use UserLogin\User;
 
 $store = [
     [
-        'name'  => 'Anne-sophie',
-        'age'   => 40
+        'name'  => 'Luke',
+        'age'   => 13
     ],
     [
         'name'  => 'Eric',
-        'age'   => 40
+        'age'   => 43
     ],
     [
         'name'  => 'Anne-sophie',
